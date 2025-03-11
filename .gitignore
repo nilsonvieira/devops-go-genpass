@@ -1,0 +1,33 @@
+# Binários compilados
+password-generator
+password-generator-*
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Arquivos de teste
+*.test
+*.out
+
+# Arquivos de log
+*.log
+
+# Diretórios específicos do Go
+/vendor/
+/Godeps/
+
+# Arquivos específicos do OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Diretórios e arquivos específicos de IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
