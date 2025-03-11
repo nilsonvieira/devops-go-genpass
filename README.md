@@ -40,7 +40,31 @@ Se nenhum argumento for especificado, o gerador criará uma senha de 12 caracter
 
 ## Instalação
 
-Você pode baixar os binários compilados na [página de releases](../../releases) ou compilar o código fonte manualmente.
+Existem várias maneiras de instalar e usar o GenPass:
+
+### Binários pré-compilados
+
+Você pode baixar os binários compilados na [página de releases](../../releases) para seu sistema operacional.
+
+### Docker (via GitHub Packages)
+
+```bash
+# Puxar a imagem
+docker pull ghcr.io/nilsonvieira/devops-go-genpass:latest
+
+# Executar o GenPass (com os parâmetros desejados)
+docker run ghcr.io/nilsonvieira/devops-go-genpass -l -n -c 16
+```
+
+### Go Install
+
+```bash
+# Instalar via Go
+go install github.com/nilsonvieira/devops-go-genpass@latest
+
+# Usar o comando
+genpass -l -n -c 16
+```
 
 ### Compilação Manual
 
