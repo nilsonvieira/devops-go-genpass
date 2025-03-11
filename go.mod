@@ -1,3 +1,3 @@
-module devops-go-genpass
+module github.com/nilsonvieira/devops-go-genpass
 
-go 1.23
+go 1.22
