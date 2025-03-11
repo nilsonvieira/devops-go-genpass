@@ -5,6 +5,13 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [v1.0.2] - 2025-03-11
+
+### Adicionado
+- Suporte para instalação via Docker usando GitHub Packages
+- Configuração do Docker workflow para build e publicação automática de imagens
+- Documentação atualizada com instruções para uso via Docker e Go install
+
 ## [v1.0.1] - 2025-03-11
 
 ### Corrigido
