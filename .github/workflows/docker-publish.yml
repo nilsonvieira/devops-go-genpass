@@ -1,5 +1,4 @@
 name: Publish Docker Package
-
 on:
   release:
     types: [created]
