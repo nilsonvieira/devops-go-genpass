@@ -33,7 +33,9 @@ jobs:
           GOOS: ${{ matrix.goos }}
           GOARCH: ${{ matrix.goarch }}
         run: |
-          go mod init github.com/nilsonvieira/devops-go-genpass
+          if [ ! -f "go.mod" ]; then
+            go mod init github.com/nilsonvieira/devops-go-genpass
+          fi
           OUTPUT="genpass-${{ matrix.goos }}-${{ matrix.goarch }}"
           if [ "${{ matrix.goos }}" = "windows" ]; then
             OUTPUT="$OUTPUT.exe"
